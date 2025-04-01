@@ -1,11 +1,10 @@
-# mfm-http
+## Keller Interiors HTTP framework
 
-A single script that can handle all HTTP requests with Filemaker
+This is a FileMaker script that handles Insert From Url requests. 
 
-## Breaking Change in 2.0.0 - sort of
-
-2.0.0 technically has a breaking change but it is highly unlikly to cause problems.
-In 1.9.1 we added `response.Ok` property to the response as fast way to check if a response was in the 200 range. Version 2.0.0 changes that to `response.ok`, SO if you never used that feature that is only a couple of months old, you will not be impacted by this change.
+*Goals*:
+- If successful, return just the response body
+- If it fails, return a valid error object in JSON format
 
 # Version History
 
